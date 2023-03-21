@@ -1,3 +1,8 @@
-/* export function ButtonPrimmary({children}){
-    return <button type="button" className={`btn btn-dark`}>{children}</button>
-} */m;;m
+import Button from 'react-bootstrap/Button';
+
+
+ function ButtonPrimmary({children}){
+    return <Button variant="Light">{children}</Button>
+}
+
+export default ButtonPrimmary

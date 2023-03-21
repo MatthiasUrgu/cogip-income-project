@@ -1,3 +1,6 @@
+@import url(/src/assets/fonts/fonts.css);
+
+
 .header {
    display: flex;
     align-items: center;
@@ -5,13 +8,14 @@
     color: white;
     height: 50px;
     box-shadow:0px 4px 4px rgba(0,0,0,0.3);
+    font-family: AleoRegular;
     
-    
-    
+
    
     .menu{
         flex: 1;
         display: flex;
+        
         
 
     
@@ -24,6 +28,7 @@
             list-style: none;
             padding-left: 30px;
             cursor: pointer;
+          
         }
     }
     

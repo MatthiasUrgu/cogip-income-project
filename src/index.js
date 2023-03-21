@@ -1,11 +1,13 @@
+
+
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./App";
 import { PageNotFound } from "./components/PageNotFound/PageNotFound";
-import { Home } from "./components/Home/Home";
-import { Contact } from "./components/Contact/Contact";
-import { Invoices } from "./components/Invoices/Invoices";
+import { Home } from "./Page/Home/Home";
+import { Contact } from "./Page/Contact/Contact";
+import { Invoices } from "./Page/Invoices/Invoices";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
