@@ -25,7 +25,7 @@ export function Menu(props) {
           </a>
         </div>
         <div className={s.log}>
-          <div>Sign in</div>
+          <div onClick={() => navigate("/SignIn")}>Sign in</div>
           <div>Log In</div>
         </div>
       </div>

@@ -8,6 +8,7 @@ import { PageNotFound } from "./components/PageNotFound/PageNotFound";
 import { Home } from "./Page/Home/Home";
 import { Contact } from "./Page/Contact/Contact";
 import { Invoices } from "./Page/Invoices/Invoices";
+import SignIn from "./Page/SignIn/SignIn";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
@@ -17,6 +18,7 @@ root.render(
           <Route path="/home" element={<Home/>}/>
           <Route path="/invoices" element={<Invoices/>}/>
           <Route path="/contact" element={<Contact/>}/>
+          <Route path="/SignIn" element={<SignIn/>}/>
         </Route>
           <Route path="*" element={<PageNotFound/>}/>
       </Routes>
