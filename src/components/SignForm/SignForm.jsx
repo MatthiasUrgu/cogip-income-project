@@ -1,12 +1,15 @@
 import s from './style.module.scss'
+import { useNavigate } from 'react-router-dom';
 
-function SignForm(props){
+
+function SignForm({title,subtitle,submit,submitP,submitLink}){
+    const navigate =useNavigate();
     return <>
-    <form action="">
+    <form action="#" className={s.container}>
         
-        <div className={s.container}>
-            <h1>Welcome</h1>
-            <p>Hi, please enter your detail</p>
+        <div className={s.form}>
+            <h1>{title}</h1>
+            <p>{subtitle}</p>
             <div className="forumulaire">
             <div className="mb-3">
                 <label  className={`form-label ${s.titleInput}`}>Email</label>
@@ -24,11 +27,22 @@ function SignForm(props){
                 <label  className={`form-label ${s.titleInput}`}>Tva Number</label>
                 <input type="email" className="form-control" id="tvaInput" placeholder="Ex: ***********-***"/>
             </div>
-            <div className="mb-3">
+            <div className="mb-5">
                 <label  className={`form-label ${s.titleInput}`}>Phone</label>
                 <input type="email" className="form-control" id="phoneInput" placeholder="Ex: 012/45.58.56"/>
             </div>
             </div>
+            <div className="mb-3 d-grid gap-2">
+                <button className={` ${s.buttonSubmit} btn btn-primary `} size="lg"type="submit">
+                    {submit}
+                </button>
+            </div>
+            <p> {submitP} 
+                <a className={s.submitBottom} onClick={() => navigate("/LogIn")}>
+                    {submitLink}
+                </a>
+                .
+            </p>
         </div>
     </form>
     </>

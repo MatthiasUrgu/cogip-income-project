@@ -1,5 +1,25 @@
 @import url(/src/assets/fonts/fonts.css);
 
-.titleInput{
-    font-family: AleoBold;
+
+.container{
+    background-color: white;
+    height: 768px;
+    width: 510px;
+
+    .form{
+        margin: 50px;
+    }
+    .titleInput{
+        font-family: Roboto-Regular;
+        font-size: 15px;
+    }
+    .buttonSubmit{
+        
+        background-color: rgba(28, 28, 240, 1);
+    }
+
+    .submitBottom{
+        text-decoration: none;
+        cursor: pointer;
+    }
 }
